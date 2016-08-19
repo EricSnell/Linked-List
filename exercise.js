@@ -57,3 +57,6 @@ LinkedList.prototype.remove = function(index) {
 
 	this.length--;
 };
+
+var linkedList = new LinkedList();
+module.exports = linkedList;
