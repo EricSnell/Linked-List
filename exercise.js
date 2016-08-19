@@ -55,5 +55,5 @@ LinkedList.prototype.remove = function(index) {
 		node.next = node.next.next;
 	}
 
-	this.length++;
+	this.length--;
 };
