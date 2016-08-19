@@ -3,6 +3,20 @@ var LinkedList = function() {
 	this.head = null;
 };
 
+LinkedList.prototype._break = function() {
+	var node = this._find(0)
+	var node2 = this._find(this.length - 1)
+	node2.next = node
+};
+
+LinkedList.prototype.addLast = function () {
+	var node = this._find(this.length - 1)
+	node.next = {
+		value: 'test',
+		next: null
+	}
+}
+
 LinkedList.prototype.insert = function(index, value) {
 	if (index < 0 || index > this.length) {
 		throw new Error('Index error');
